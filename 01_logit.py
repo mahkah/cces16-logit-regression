@@ -438,7 +438,7 @@ recode = {0: 1, 1: -1, 2: 0}
 map_recode(recode_var, recode)
 
 
-cces_recode['cjr_comb'] = (cces_recode['CC16_334a'] - cces_recode['CC16_333b'] + cces_recode['CC16_333c'] - cces_recode['CC16_333d']) / 4
+cces_recode['cjr_comb'] = (cces_recode['CC16_334a'] + cces_recode['CC16_333b'] - cces_recode['CC16_333c'] - cces_recode['CC16_333d']) / 4
 print(cces_recode['cjr_comb'].value_counts(sort=False))
 attitude_meta['cjr_comb'] = [
         "Criminal justice scale", 
